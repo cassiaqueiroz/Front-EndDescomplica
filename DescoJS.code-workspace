@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../DescoJS"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DescoFront"
+	}
+}

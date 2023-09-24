@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve sua Viagem</title>
+    <link rel="stylesheet" href="#">
+</head>
+
+<body>
+    <section>
+        <h1 id="atividade">Reserve sua Viagem</h1>
+        <form method="get">
+            <fieldset>
+                <legend>Seus Dados</legend>
+                <label for="name">Nome:</label>
+                <br>
+                <input type="text" id="name" name="nome">
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" required name="email">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Serviços Desejados</legend>
+                <label for="passagens">
+                    <input type="checkbox" id="passagens" name="servico" value="Passagens">Compra de Passagens
+                    <br>
+                </label>
+                <label for="hospedagem">
+                    <input type="checkbox" id="hospedagem" name="servico" value="Hospedagem">Reserva de Hospedagem
+                    <br>
+                </label>
+                <label for="veiculos">
+                    <input type="checkbox" id="veiculos" name="servico" value="Veículos">Aluguel de Veículos
+                    <br>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <label for="cartaoCredito">
+                    <input type="radio" id="cartaoCredito" name="formaPagamento" value="cartaoCredito">Cartão de Crédito
+                    <br>
+                </label>
+                <label for="boleto">
+                    <input type="radio" id="boleto" name="formaPagamento" value="Boleto">Boleto
+                    <br>
+                </label>
+                <label for="pix">
+                    <input type="radio" id="pix" name="formaPagamento" value="Pix">Pix
+                    <br>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Prazo de pagamento</legend>
+                <label for="prazoPagamento">
+                    <select id="prazoPagamento" name="prazoPagamento">
+                        <option value="aVista">À vista</option>
+                        <option value="5x">5x sem juros</option>
+                        <option value="10x" selected>10x com juros</option>
+                    </select>
+                    <br>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Observações</legend>
+                <label for="observacoes">Escreva aqui comentários ou perguntas:</label>
+                <br>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" name="enviar" value="Reservar">
+        </form>
+    </section>
+    <br>
+    <hr>
+
+    <footer>
+        <p>Desenvolvido por Cássia Queiroz © 2023.</p>
+    </footer>
+
+</body>
+
+</html>

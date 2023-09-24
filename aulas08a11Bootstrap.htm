@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--Biblioteca de Ícones do bootstrap-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Viagem dos Sonhos</title>
+
+</head>
+
+
+
+<body>
+
+    <!--Foi adicionada a baixo a class container-fluid p-2 (o p é um padding com unidade relativa) text-center-->
+
+    <header class="container-fluid p-2 text-center">
+
+        <!--Nav trazido do site bootstrap (a primeira opção de nav), tendo sido cortado o form de search 
+
+            e alterando a cor do background (<nav class="navbar navbar-expand-lg bg-body-tertiary)
+
+        virou: <nav class="navbar navbar-expand-lg bg-warning"> -->
+
+        <nav class="navbar navbar-expand-lg bg-warning">
+
+            <div class="container-fluid">
+
+                <!--Foi alterada a logo da nav bar para "Viagem dos Sonhos"-->
+
+                <a class="navbar-brand" href="#">Viagem dos Sonhos</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!--Foram inseridas as classes "justify-content-end" e "bg-warning" na div a seguir-->
+
+                <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+
+                    <!--Foi removida a classe "me-auto mb-2 mb-lg-0" do ul-->
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+
+                            <!--Foi removida a classe active da tag a abaixo-->
+
+                            <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">Taxas</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+
+                                aria-expanded="false">
+
+                                Faça seu orçamento </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li>
+
+                                    <hr class="dropdown-divider">
+
+                                </li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                            </ul>
+
+                        </li>
+
+                     
+
+        </div>
+
+    </header>
+
+    <section class="container-fluid bg-light text-center p-3">
+
+        <h2>Conheça nossos pacotes</h2>
+
+        <p>
+
+            "Neque porro quisquam est qui dolorem ipsum"
+
+        </p>
+
+        <!--A div aqui abaixo vai ser útil para dividir figures e video, 
+
+            já que não existe nenhuma tag semântica com essa função específica-->
+
+        <!--Usando class row e col text-center do Bootstrap. Além disso, "flex-colum" garantiu que uma foto fique abaixo da outra em qualquer dispositivo-->
+
+        <div class="row flex-column">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <img src="https://admin.mam.org.br/wp-content/uploads/2014/10/salvador-dali-624x350-600x400.jpg"
+
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">Férias Dalí em
+
+                                Barcelona</h5>
+
+                            <h2 class="card-subtitle text-muted">R$ 10.000,00</h2>
+
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+
+                                to additional content. This content is a little bit longer.</p>
+
+
+
+                            <a href="#" class="btn btn-warning" data-bs-toggle="modal"
+
+                                data-bs-target="#exampleModal">Reservar</a>
+
+                        </div>
+
+                        <div class="card-footer">
+
+                            <small class="text-muted">Em até 10x sem juros</small>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <div class="card h-100">
+
+                        <img src="https://s4.static.brasilescola.uol.com.br/be/2022/10/deserto-saara.jpg"
+
+                            class="card-img-top" alt="...">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title"> Vinte e uma noites no Marrocos
+
+                            </h5>
+
+                            <h2 class="card-subtitle text-muted">R$ 5.700,00</h2>
+
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+
+                                to additional content. This content is a little bit longer.</p>
+
+                            <a href="#" class="btn btn-warning">Reservar</a>
+
+                        </div>
+
+                        <div class="card-footer">
+
+                            <small class="text-muted">Em até 10x sem juros</small>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <br>
+
+    <section class="container-fluid bg-warning text-center p-4">
+
+        <h2 class="text-center">Orçamento</h2>
+
+        <form action="" method="get">
+
+            <fieldset>
+
+                <legend>Dados da Viagem</legend>
+
+                <!--Div abaixo definindo Margin bottom com Bootstrap-->
+
+                <div class="mb-3">
+
+                    <!--Id do input abaixo recebe o mesmo nome do for do label acima; input estilizado com "form-control"-->
+
+                    <input type="text" class="form-control" name="nome" id="name">
+
+                    <!--Label abaixo com class form-label do Bootstrap-->
+
+                    <label class="form-label" for="name">Nome:</label>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <input type="email" placeholder="youremail@email.com" class="form-control" name="email" id="email">
+
+                    <label class="form-label" for="email">Email:</label>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <input type="date" class="form-control" name="dataIda" id="dataIda">
+
+                    <label class="form-label" for="dataIda">Data de Ida</label>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+
+                    <label class="form-label" for="dataVolta">Data de Volta</label>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Quais serviços deseja contratar?</legend>
+
+                <!--Para checkbox, Bootstrap possui uma classe chamada form-check, utilizada na div abaixo-->
+
+                <div class="form-check  d-flex">
+
+                    <!--Para input, Bootstrap possui uma classe chamada form-check-input, utilizada na input abaixo-->
+
+                    <input type="checkbox" class="form-check-input" name="passagens" value="Passagens"
+
+                        id="compraPassagem">
+
+                    <!--Para label, Bootstrap possui uma classe chamada form-check-label, utilizada na label abaixo-->
+
+                    <label class="form-check-label" for="compraPassagem">
+
+                        Compra de
+
+                        Passagens
+
+                    </label>
+
+                </div>
+
+                <div class="form-check  d-flex">
+
+                    <input type="checkbox" class="form-check-input" name="hospedagem" value="Hospedagem"
+
+                        id="reservaHospedagem">
+
+                    <label class="form-check-label" for="reservaHospedagem">
+
+                        Reserva de
+
+                        Hospedagem
+
+                    </label>
+
+                </div>
+
+                <div class="form-check  d-flex">
+
+                    <input type="checkbox" class="form-check-input" name="veiculos" value="Veículos"
+
+                        id="reservaVeiculos">
+
+                    <label class="form-check-label" for="reservaVeiculos">
+
+                        Reserva de
+
+                        Veículos
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <br>
+
+            <!--Class btn do bootstrap para estilizar o botão-->
+
+            <button class="btn btn-light">Salvar</button>
+
+        </form>
+
+    </section>
+
+    <section class="container-fluid bg-light text-xl-center p-3">
+
+        <h2>Taxas e serviços</h2>
+
+        <p>Veja nossas taxas para serviços</p>
+
+        <br>
+
+        <!-- A tabela abaixo foi editada com classes do bootstrap na tag table, thead e tbody-->
+
+        <table class="table table-striped table-hover table-bordered border-warning">
+
+            <caption>Descrição dos serviços e respectivos valores</caption>
+
+            <thead class="table-warning">
+
+                <tr>
+
+                    <th>Serviço</th>
+
+                    <th>Valor</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody class="table-group-divider">
+
+                <tr>
+
+                    <td>Reserva de Hotel</td>
+
+                    <td>R$ 500,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Compra de Passagens</td>
+
+                    <td>R$ 100,00</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Aluguel de Carros</td>
+
+                    <td>R$ 50,00</td>
+
+                </tr>
+
+            </tbody>
+
+
+
+        </table>
+
+
+
+    </section>
+
+    <footer class="container-fluid bg-warning text-center p-4">
+
+        <p>Desenvolvido por Cássia Queiroz © 2023.</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+
+        crossorigin="anonymous"></script>
+
+</body>
+
+<div class="modal" id="exampleModal" tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Suas Compras</h5>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>Produto adicionado ao carrinho.</p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Continuar comprando</button>
+
+                <a href="checkout.htm" type="button" class="btn btn-warning">Finalizar compra</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</html>
